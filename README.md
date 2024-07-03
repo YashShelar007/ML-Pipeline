@@ -20,14 +20,20 @@
 
 <b>Using MLflow Tracking</b>
 
-import dagshub
-dagshub.init(repo_owner='', repo_name='', mlflow=True)
+import dagshub<br>
+dagshub.init(repo_owner='', repo_name='', mlflow=True)<br><br>
 
-import mlflow
-with mlflow.start_run():
-mlflow.log_param('parameter name', 'value')
+import mlflow<br>
+with mlflow.start_run():<br>
+mlflow.log_param('parameter name', 'value')<br>
 mlflow.log_metric('metric name', 1)
 
 # DVC
+
+<b> DVC Command Line </b>
+<br>
+1. dvc init
+2. dvc repro
+3. dvc dag
 
 # AWS-CICD-Deployment-with-Github-Actions
