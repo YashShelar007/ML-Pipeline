@@ -11,3 +11,23 @@
 7. Update the pipeline
 8. Update the main.py
 9. Update the dvc.yaml
+
+# MLflow
+
+<a href="https://mlflow.org/docs/latest/index.html">Documentation</a>
+
+# Dagshub
+
+<b>Using MLflow Tracking</b>
+
+import dagshub
+dagshub.init(repo_owner='', repo_name='', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+mlflow.log_param('parameter name', 'value')
+mlflow.log_metric('metric name', 1)
+
+# DVC
+
+# AWS-CICD-Deployment-with-Github-Actions
