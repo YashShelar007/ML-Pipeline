@@ -20,18 +20,21 @@
 
 <b>Using MLflow Tracking</b>
 
-import dagshub<br>
-dagshub.init(repo_owner='', repo_name='', mlflow=True)<br><br>
+import dagshub
 
-import mlflow<br>
-with mlflow.start_run():<br>
-mlflow.log_param('parameter name', 'value')<br>
-mlflow.log_metric('metric name', 1)
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dagshub.init(repo_owner='', repo_name='', mlflow=True)</p><br>
+
+import mlflow
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with mlflow.start_run():</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mlflow.log_param('parameter name', 'value')</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mlflow.log_metric('metric name', 1)</p>
 
 # DVC
 
 <b> DVC Command Line </b>
 <br>
+
 1. dvc init
 2. dvc repro
 3. dvc dag
