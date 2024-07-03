@@ -1,6 +1,7 @@
 tensorflow==2.13.0
 pandas 
 gdown
+dagshub
 dvc
 mlflow==2.13.2
 notebook
